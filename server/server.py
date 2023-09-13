@@ -64,7 +64,7 @@ def process_videos(video):
                 results.pose_landmarks,
                 mp_pose.POSE_CONNECTIONS,
                 landmark_drawing_spec=mp_drawing_styles.get_default_pose_landmarks_style())
-            out.write(image)
+        out.write(image)
         else:
             continue
 
