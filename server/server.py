@@ -25,8 +25,6 @@ def upload_video(video_path):
     else:
         outfile = video_path
         blob.upload_from_filename(outfile)
-        with open(outfile, 'rb') as fp:
-            blob.upload_from_file(fp)
         print('This file is uploaded to cloud.')
         blob.make_public()
         return blob.public_url
